@@ -12,7 +12,7 @@ Web interface for Raspberry Pi fm transmitter. Made using Vue.js and Python.
 Warning! this was tested on Raspbian Lite 64 bit on a Raspberry Pi 3 Model B+. i have not tested it on other boards.
 ```sh
 $ cd ~
-$ git clone https://github.com/amir16yp/web-rpi-fm
+$ git clone https://github.com/amir16yp/web-rpi-fm.git
 $ cd web-rpi-fm
 $ chmod +x ./install.sh
 $ ./install.sh
