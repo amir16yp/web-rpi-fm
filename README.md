@@ -9,40 +9,17 @@ Web interface for Raspberry Pi fm transmitter. Made using Vue.js and Python.
 
 
 ### Installation
-1. Get the latest [release]
-2. Run install.sh file
+Warning! this was tested on Raspbian Lite 64 bit on a Raspberry Pi 3 Model B+. i have not tested it on other boards.
 ```sh
-$ sudo ./install.sh
-```
-3. Run terminal and start the server
-```sh
+$ cd ~
+$ git clone https://github.com/amir16yp/web-rpi-fm
 $ cd web-rpi-fm
-$ python server.py
+$ chmod +x ./install.sh
+$ ./install.sh
+$ python3 server.py # runs the server in production mode using waitress, on port 9000
 ```
-4. Open the browser and type your RPi address with 9000 port
-```sh
-For example
-192.168.0.108:9000
-```
+The only thing left to do after installation is connecting a wire or an antenna to GPIO port 4 and access the webpage at (your pi ip):9000
 
-### Manual installation
-```sh
-$ sudo apt-get install sox libsox-fmt-all libsox-fmt-mp3
-$ pip install flask flask_uploads flask_cors tinytag
-```
-
-If the music does not play you must change some permissions
-```sh
-$ chmod 777 pifmrds
-$ cd static/audio
-$ chmod 777 pifmrds
-```
-### Todos
- - Add more functionalities
- - Fix bugs and UX
- - Spotify Connect
- - Add more internet radio stations
- 
  ### Licence
  MIT
 
