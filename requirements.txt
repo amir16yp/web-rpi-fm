@@ -1,0 +1,5 @@
+flask
+tinytag
+Flask-Reuploaded
+waitress
+flask-cors
