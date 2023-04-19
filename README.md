@@ -18,7 +18,7 @@ $ chmod +x ./install.sh
 $ ./install.sh
 $ python3 server.py # runs the server in production mode using waitress, on port 9000
 ```
-The only thing left to do after installation is connecting a wire or an antenna to GPIO port 4 and access the webpage at (your pi ip):9000
+The only thing left to do after installation is connecting a wire or an antenna to GPIO port 4 and access the webpage at (your pi ip):9000, and maybe make a systemd service for it.
 
  ### Licence
  MIT
@@ -27,4 +27,3 @@ web-rpi-fm is in the alpha phase, some functions may not work.
 I am not responsible for damages caused by using the application.
 
  [PiFmRds]: <https://github.com/ChristopheJacquet/PiFmRds>
- [release]: <https://github.com/dawiddydlinski/web-rpi-fm/releases>
